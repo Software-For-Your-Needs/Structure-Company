@@ -2,6 +2,7 @@ package com.example.demo.entities;
 
 public class Empresa {
 
+    //Atributos
     private int nitEmpresa;
     private String nombreEmpresa;
     private String tipoEmpresa;
@@ -24,6 +25,8 @@ public class Empresa {
         this.telefonoEmpresa = telefonoEmpresa;
         this.correoEmpresa = correoEmpresa;
     }
+
+    //Métodos Setters and Getters
 
     public int getNitEmpresa() {
         return nitEmpresa;
@@ -80,5 +83,6 @@ public class Empresa {
     public void setCorreoEmpresa(String correoEmpresa) {
         this.correoEmpresa = correoEmpresa;
     }
+
 }
 
