@@ -1,22 +1,23 @@
 package com.example.demo.entities;
 
-public class Tesoreria {
+public class MovimientoDinero {
+    // Atributos
     private float montoMovimiento;
     private float montosPositivos;
     private float montosNegativos;
     private String conceptoMovimiento;
     private String usuarioContabilidad;
 
-    public Tesoreria (){};
+    public MovimientoDinero (){};
 
-    public Tesoreria (float montoMovimiento, float montosPositivos, float montosNegativos, String conceptoMovimiento, String usuarioContabilidad) {
+    public MovimientoDinero (float montoMovimiento, float montosPositivos, float montosNegativos, String conceptoMovimiento, String usuarioContabilidad) {
         this.montoMovimiento = montoMovimiento;
         this.montosPositivos = montosPositivos;
         this.montosNegativos = montosNegativos;
         this.conceptoMovimiento = conceptoMovimiento;
         this.usuarioContabilidad = usuarioContabilidad;
     }
-
+    // Métodos getter and setter
     public float getMontoMovimiento() {
         return montoMovimiento;
     }

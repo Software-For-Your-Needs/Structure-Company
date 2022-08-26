@@ -1,13 +1,14 @@
 package com.example.demo.entities;
 
 public class Empleado {
+    //Atributos
     private String nombreEmpleado;
     private String correoEmpleado;
     private String rollEmpleado;
     private int idEmpleado;
     private Empresa empresaEmpleado;
 
-    // metodo constructor
+    // Método constructor
 
 
     public Empleado() {
@@ -20,7 +21,7 @@ public class Empleado {
         this.idEmpleado = idEmpleado;
         this.empresaEmpleado = empresaEmpleado;
     }
-
+    // Métodos getter and setter
     public String getNombreEmpleado() {
         return nombreEmpleado;
     }
