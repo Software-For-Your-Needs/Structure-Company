@@ -8,6 +8,7 @@ public class MovimientoDinero {
     private String conceptoMovimiento;
     private String usuarioContabilidad;
 
+    // Método constructor
     public MovimientoDinero (){};
 
     public MovimientoDinero (float montoMovimiento, float montosPositivos, float montosNegativos, String conceptoMovimiento, String usuarioContabilidad) {

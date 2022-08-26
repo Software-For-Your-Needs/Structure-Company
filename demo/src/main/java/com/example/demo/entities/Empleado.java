@@ -4,7 +4,7 @@ public class Empleado {
     //Atributos
     private String nombreEmpleado;
     private String correoEmpleado;
-    private String rollEmpleado;
+    private String rolEmpleado;
     private int idEmpleado;
     private Empresa empresaEmpleado;
 
@@ -14,10 +14,10 @@ public class Empleado {
     public Empleado() {
     }
 
-    public Empleado(String nombreEmpleado, String correoEmpleado, String rollEmpleado, int idEmpleado, Empresa empresaEmpleado) {
+    public Empleado(String nombreEmpleado, String correoEmpleado, String rolEmpleado, int idEmpleado, Empresa empresaEmpleado) {
         this.nombreEmpleado = nombreEmpleado;
         this.correoEmpleado = correoEmpleado;
-        this.rollEmpleado = rollEmpleado;
+        this.rolEmpleado = rolEmpleado;
         this.idEmpleado = idEmpleado;
         this.empresaEmpleado = empresaEmpleado;
     }
@@ -38,12 +38,12 @@ public class Empleado {
         this.correoEmpleado = correoEmpleado;
     }
 
-    public String getRollEmpleado() {
-        return rollEmpleado;
+    public String getRolEmpleado() {
+        return rolEmpleado;
     }
 
-    public void setRollEmpleado(String rollEmpleado) {
-        this.rollEmpleado = rollEmpleado;
+    public void setRolEmpleado(String rollEmpleado) {
+        this.rolEmpleado = rolEmpleado;
     }
 
     public int getIdEmpleado() {
