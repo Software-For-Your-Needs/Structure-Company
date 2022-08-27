@@ -75,7 +75,21 @@ public class MovimientoDinero implements Serializable{
         this.usuarioContabilidad = usuarioContabilidad;
     }
 
-   
+    public float calcularGanancia(){
+
+        return  this.montosPositivos - this.montosNegativos;
+
+    }
+
+    public String consultarEstadoCuenta(){
+
+        if(calcularGanancia() < 0){
+            return "Es deudor";
+        }else{
+            return "paz y salvo";
+        }
+
+    }
 
 }
 
