@@ -26,43 +26,56 @@ public class MovimientoDinero implements Serializable{
     }
     // Métodos getter and setter
     public float getMontoMovimiento() {
+
         return montoMovimiento;
     }
 
     public void setMontoMovimiento(float montoMovimiento) {
+
         this.montoMovimiento = montoMovimiento;
     }
 
     public float getMontosPositivos() {
+
         return montosPositivos;
     }
 
     public void setMontosPositivos(float montosPositivos) {
+
         this.montosPositivos = montosPositivos;
     }
 
     public float getMontosNegativos() {
+
         return montosNegativos;
     }
 
     public void setMontosNegativos(float montosNegativos) {
+
         this.montosNegativos = montosNegativos;
     }
 
     public String getConceptoMovimiento() {
+
         return conceptoMovimiento;
     }
 
     public void setConceptoMovimiento(String conceptoMovimiento) {
+
         this.conceptoMovimiento = conceptoMovimiento;
     }
 
     public String getUsuarioContabilidad() {
+
         return usuarioContabilidad;
     }
 
     public void setUsuarioContabilidad(String usuarioContabilidad) {
+
         this.usuarioContabilidad = usuarioContabilidad;
     }
+
+   
+
 }
 
