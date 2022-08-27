@@ -1,6 +1,12 @@
 package com.example.demo.entities;
 
-public class MovimientoDinero {
+public class MovimientoDinero implements Serializable{
+
+    //Se agrega el @id
+    private static final Integer serialVersionUID = 432;
+    @id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private int id;
     // Atributos
     private float montoMovimiento;
     private float montosPositivos;

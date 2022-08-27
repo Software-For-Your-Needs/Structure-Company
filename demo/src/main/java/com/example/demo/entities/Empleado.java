@@ -1,10 +1,17 @@
 package com.example.demo.entities;
 
-public class Empleado {
+public class Empleado implements Serializable{
+
+    //Se agrega el @id
+    private static final Integer serialVersionUID = 432;
+    @id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private int id;
+
     //Atributos
     private String nombreEmpleado;
     private String correoEmpleado;
-    private String rolEmpleado;
+    private Enum rolEmpleado{Admin , Operario};
     private int idEmpleado;
     private Empresa empresaEmpleado;
 
@@ -14,13 +21,14 @@ public class Empleado {
     public Empleado() {
     }
 
-    public Empleado(String nombreEmpleado, String correoEmpleado, String rolEmpleado, int idEmpleado, Empresa empresaEmpleado) {
+    public Empleado(String nombreEmpleado, String correoEmpleado, Enum rolEmpleado, int idEmpleado, Empresa empresaEmpleado) {
         this.nombreEmpleado = nombreEmpleado;
         this.correoEmpleado = correoEmpleado;
         this.rolEmpleado = rolEmpleado;
         this.idEmpleado = idEmpleado;
         this.empresaEmpleado = empresaEmpleado;
     }
+
     // Métodos getter and setter
     public String getNombreEmpleado() {
         return nombreEmpleado;
@@ -38,11 +46,11 @@ public class Empleado {
         this.correoEmpleado = correoEmpleado;
     }
 
-    public String getRolEmpleado() {
+    public Enum getRolEmpleado() {
         return rolEmpleado;
     }
 
-    public void setRolEmpleado(String rollEmpleado) {
+    public void setRolEmpleado(Enum rolEmpleado) {
         this.rolEmpleado = rolEmpleado;
     }
 
@@ -61,4 +69,7 @@ public class Empleado {
     public void setEmpresaEmpleado(Empresa empresaEmpleado) {
         this.empresaEmpleado = empresaEmpleado;
     }
+
 }
+
+

@@ -1,6 +1,12 @@
 package com.example.demo.entities;
 
-public class Empresa {
+public class Empresa implements Serializable{
+
+    //Se agrega el @id
+    private static final Integer serialVersionUID = 432;
+    @id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private int id;
     // Atributos
     private int nitEmpresa;
     private String nombreEmpresa;
