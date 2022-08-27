@@ -1,5 +1,7 @@
 package com.example.demo.entities;
 
+import javax.persistence.*;
+import java.io.Serializable;
 public class Empleado implements Serializable{
 
     //Se agrega el @id
