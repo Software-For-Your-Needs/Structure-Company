@@ -84,7 +84,7 @@ public class MovimientoDinero implements Serializable{
     public String consultarEstadoCuenta(){
 
         if(calcularGanancia() < 0){
-            return "Es Acreedor";
+            return "Es deudor";
         }else{
             return "paz y salvo";
         }
